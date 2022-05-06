@@ -1,0 +1,9 @@
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+a:hover {
+    color: saddlebrown;
+    text-decoration: none;
+}
