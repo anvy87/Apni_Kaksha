@@ -6,41 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="">
-        <h1>Payment Form</h1>
-        <h2>Contact Information</h2>
-        <p>Name: <input type="text" name="name"></p>
-        <fieldset>
-            <legend>Gender</legend>
-            <p>
-                Male <input type="radio" name="gender" id="gender"> Female <input type="radio" name="gender" id="gender">
-            </p>
-        </fieldset>
-        <p>Address: <textarea name="address" id="address" cols="50" rows="5"></textarea></p>
-        <p>Email: <input type="email" , name="email" id="email"></p>
-        <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
-        <h2>Payment Information</h2>
-        <p>Card Type:
-            <select name="card_type" id="card_type">
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="main-heading">Payment Form</h1>
+            <h2>Contact Information</h2>
+            <p>Name: <input type="text" name="name" placeholder="Enter your Name here"></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="gender"> Female <input type="radio" name="gender" id="gender">
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="50" rows="5"></textarea></p>
+            <p>Email: <input type="email" , name="email" id="email"></p>
+            <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+            <h2>Payment Information</h2>
+            <p>Card Type:
+                <select name="card_type" id="card_type">
                 <option value="">--Select a Card Type--</option>
                 <option value="visa">Visa</option>
                 <option value="rupay">Rupay</option>
                 <option value="mastercard">MasterCard</option>
             </select>
-        </p>
-        <p>
-            Card Number <input type="number" name="card_number" id="card_number">
-        </p>
-        <p>
-            Expiration Date: <input type="date" name="exp_date" id="exp_date">
-        </p>
-        <p>CVV <input type="password" name="cvv" id="cvv"></p>
-        <input type="submit" value="Pay Now">
+            </p>
+            <p>
+                Card Number <input type="number" name="card_number" id="card_number">
+            </p>
+            <p>
+                Expiration Date: <input type="date" name="exp_date" id="exp_date">
+            </p>
+            <p>CVV <input type="password" name="cvv" id="cvv"></p>
+            <input type="submit" value="Pay Now">
 
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
